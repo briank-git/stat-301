@@ -40,8 +40,8 @@ RUN mamba update --quiet --file /tmp/conda-linux-64.lock && \
   Rscript -e "install.packages('glmbb', repos='http://cran.us.r-project.org')"
 
 # Install nbgitpuller, jupytext, jlab-git
-RUN jupyter labextension install @techrah/text-shortcuts
+#RUN jupyter labextension install @techrah/text-shortcuts
   
 # Install the extension to remove the shift+M merge shortcut
-RUN mkdir -p /home/${NB_USER}/.jupyter/lab/user-settings/\@jupyterlab/shortcuts-extension
-COPY rm-merge-shortcut.py /home/${NB_USER}/.jupyter/lab/user-settings/\@jupyterlab/shortcuts-extension/shortcuts.jupyterlab-settings
+#RUN mkdir -p /home/${NB_USER}/.jupyter/lab/user-settings/\@jupyterlab/shortcuts-extension
+#COPY rm-merge-shortcut.py /home/${NB_USER}/.jupyter/lab/user-settings/\@jupyterlab/shortcuts-extension/shortcuts.jupyterlab-settings
