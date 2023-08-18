@@ -4,49 +4,49 @@ channels:
  - r 
  - nodefaults
 dependencies:
+  - r-aer 
   - r-base 
+  - r-binom 
+  - r-boot 
+  - r-car 
+  - r-cardata 
   - r-caret 
+  - r-caret 
+  - r-cowplot 
   - r-crayon 
   - r-devtools 
   - r-e1071 
+  - r-faraway 
   - r-forecast 
+  - r-ggally 
+  - r-glmnet 
+  - r-gridextra 
+  - r-gridgraphics 
+  - r-gsdesign 
   - r-hexbin 
   - r-htmltools 
   - r-htmlwidgets 
+  - r-infer 
   - r-irkernel 
+  - r-janitor 
+  - r-kknn 
+  - r-latex2exp 
+  - r-leaps 
+  - r-mlbench 
+  - r-mltools 
   - r-nycflights13 
+  - r-performance 
+  - r-qqplotr 
   - r-randomforest 
   - r-rcurl 
   - r-rmarkdown 
   - r-rodbc 
+  - r-rpostgres 
   - r-rsqlite 
+  - r-see 
   - r-shiny 
+  - r-testthat 
   - r-tidymodels 
   - r-tidyverse 
-  - unixodbc
-  - r-cowplot 
-  - r-ggally 
-  - r-gridextra 
-  - r-infer 
-  - r-kknn 
-  - r-testthat 
-  - r-rpostgres 
-  - r-janitor 
-  - r-mltools 
-  - r-leaps 
-  - r-faraway 
-  - r-glmnet 
   - r-titanic 
-  - r-performance 
-  - r-binom 
-  - r-gridgraphics 
-  - r-aer 
-  - r-latex2exp 
-  - r-gsdesign 
-  - r-car 
-  - r-cardata 
-  - r-mlbench 
-  - r-qqplotr 
-  - r-see 
-  - r-boot 
-  - r-caret 
+  - unixodbc
