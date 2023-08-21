@@ -19,6 +19,7 @@ dependencies:
   - r-faraway 
   - r-forecast 
   - r-ggally 
+  - r-glmbb
   - r-glmnet 
   - r-gridextra 
   - r-gridgraphics 
@@ -28,6 +29,8 @@ dependencies:
   - r-htmlwidgets 
   - r-infer 
   - r-irkernel 
+  - r-islr
+  - r-islr2
   - r-janitor 
   - r-kknn 
   - r-latex2exp 
@@ -35,6 +38,7 @@ dependencies:
   - r-mlbench 
   - r-mltools 
   - r-nycflights13 
+  - r-palmerpenguins
   - r-performance 
   - r-qqplotr 
   - r-randomforest 
