@@ -4,6 +4,9 @@ channels:
  - r 
  - nodefaults
 dependencies:
+  - jupyterlab-git
+  - jupytext
+  - nbgitpuller
   - r-aer 
   - r-base 
   - r-binom 
