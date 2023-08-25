@@ -9,5 +9,5 @@ LABEL maintainer="Brian Kim <brian.kim@stat.ubc.ca>"
 # install rise slides extension, nbgrader, clean cache
 RUN mamba install --quiet --yes \
     'rise' \
-    'nbgrader=0.8.2' \
-    && mamba clean --all -f -y \
+    'nbgrader=0.8.2' && \
+    mamba clean --all -f -y
