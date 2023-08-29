@@ -11,3 +11,6 @@ RUN mamba install --quiet --yes \
     'rise' \
     'nbgrader=0.8.2' && \
     mamba clean --all -f -y
+
+# re-upgrade jupyter-server (mamba downgrades it)
+RUN pip install --upgrade jupyter-server
