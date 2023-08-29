@@ -39,6 +39,9 @@ RUN mamba update --quiet --file /tmp/conda-linux-64.lock && \
   fix-permissions "/home/${NB_USER}" && \
   Rscript -e "install.packages('faux', repos='http://cran.us.r-project.org')"
 
+# Disable the cell toolbar (which ignores metadata and students often accidentally click + delete grading cells)
+RUN jupyter labextension disable @jupyterlab/cell-toolbar-extension
+
 # Configure shortcuts-extension to remove Shift-M cell merge shortcut
 COPY shortcuts.jupyterlab-settings /home/${NB_USER}/.jupyter/lab/user-settings/\@jupyterlab/shortcuts-extension/shortcuts.jupyterlab-settings
 
