@@ -27,6 +27,10 @@ WORKDIR "${HOME}"
 # remove the "work/" directory added in an earlier layer...
 RUN rm -rf work
 
+# disable warnings that pollute build logs; seems to be related to the update to python 3.11
+# https://discourse.jupyter.org/t/debugger-warning-it-seems-that-frozen-modules-are-being-used-python-3-11-0/16544/12
+ENV PYDEVD_DISABLE_FILE_VALIDATION=1
+
 COPY conda-linux-64.lock /tmp/conda-linux-64.lock
 
 RUN mamba update --quiet --file /tmp/conda-linux-64.lock && \
