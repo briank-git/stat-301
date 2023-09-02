@@ -42,9 +42,3 @@ RUN jupyter labextension disable @jupyterlab/cell-toolbar-extension
 
 # Configure shortcuts-extension to remove Shift-M cell merge shortcut
 COPY shortcuts.jupyterlab-settings /home/${NB_USER}/.jupyter/lab/user-settings/\@jupyterlab/shortcuts-extension/shortcuts.jupyterlab-settings
-
-# Make sure everything in the home folder is owned by NB_USER
-USER root
-RUN chown -R ${NB_USER} /home/${NB_USER}
-USER ${NB_UID}
-
