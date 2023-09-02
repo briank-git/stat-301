@@ -22,7 +22,8 @@ RUN apt-get update --yes && \
 
 USER ${NB_UID}
 
-WORKDIR "${HOME}"
+# Change workdir to $HOME/work so config files are preserved when bind mounting
+WORKDIR "${HOME}/work"
 
 # remove the "work/" directory added in an earlier layer...
 RUN rm -rf work
