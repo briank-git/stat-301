@@ -51,7 +51,8 @@ dependencies:
   - r-rpostgres 
   - r-rsqlite 
   - r-see 
-  - r-shiny 
+  - r-shiny
+  - r-stringi=1.7.12
   - r-testthat 
   - r-tidymodels 
   - r-tidyverse 
