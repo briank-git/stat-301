@@ -8,6 +8,7 @@ dependencies:
   - jupyterlab-git
   - jupytext
   - nbgitpuller
+  - plotly
   - r-aer 
   - r-base 
   - r-binom 
