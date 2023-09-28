@@ -8,7 +8,6 @@ dependencies:
   - jupyterlab-git
   - jupytext
   - nbgitpuller
-  - plotly
   - r-aer 
   - r-base 
   - r-binom 
@@ -46,6 +45,7 @@ dependencies:
   - r-nycflights13 
   - r-palmerpenguins
   - r-performance 
+  - r-plotly
   - r-qqplotr 
   - r-randomforest 
   - r-rcurl 
