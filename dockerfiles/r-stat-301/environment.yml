@@ -23,6 +23,7 @@ dependencies:
   - r-faraway 
   - r-forecast 
   - r-ggally 
+  - r-ggpubr
   - r-glmbb
   - r-glmnet 
   - r-gridextra 

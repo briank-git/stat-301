@@ -35,7 +35,8 @@ RUN mamba update --quiet --file /tmp/conda-linux-64.lock && \
   mamba clean --all -y -f && \
   fix-permissions "${CONDA_DIR}" && \
   fix-permissions "/home/${NB_USER}" && \
-  Rscript -e "install.packages('faux', repos='http://cran.us.r-project.org')"
+  Rscript -e "install.packages('faux', repos='http://cran.us.r-project.org')" && \
+  Rscript -e "install.packages('moderndive', repos='http://cran.us.r-project.org')"
 
 # Disable the cell toolbar (which ignores metadata and students often accidentally click + delete grading cells)
 RUN jupyter labextension disable @jupyterlab/cell-toolbar-extension
